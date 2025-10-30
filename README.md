@@ -23,10 +23,7 @@ The waveform below demonstrates:
 
 **Waveform Output:**
 
-![Traffic Light Waveform](./waveform.png)
-
-> ⚠️ If the image does not display, make sure `waveform.png` is uploaded in the same folder as this README file.  
-> You can also use `images/waveform.png` if placed inside a subfolder and update the link accordingly.
+![Traffic Light Waveform](./outputwaveform.PNG)
 
 ---
 
