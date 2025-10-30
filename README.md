@@ -1,0 +1,80 @@
+# 🚦 FPGA-Based Traffic Light Controller with Priority System
+
+## Overview
+Verilog-based 2-way traffic light controller (North–South and East–West) with **emergency vehicle priority override**.  
+Designed for FPGA implementation (e.g., Xilinx Spartan) and fully simulated online using **EDA Playground / Vivado**.  
+This repository contains the Verilog design, testbench, and waveform output demonstrating the system’s behavior.
+
+---
+
+## 🧩 Files Included
+- `traffic_controller.v` — Main Verilog RTL Design  
+- `tb_traffic.v` — Testbench (stimulus and waveform generation)  
+- `waveform.png` — Screenshot of simulation waveform  
+- `README.md` — Project documentation (this file)
+
+---
+
+## 📊 Simulation Waveform
+
+The waveform below demonstrates:
+- Normal operation cycle (NS Green → NS Yellow → All-Red → EW Green → EW Yellow → All-Red → repeat)
+- Priority override for emergency vehicles (`emg_ns` or `emg_ew`) that immediately grants a Green signal to that direction
+
+**Waveform Output:**
+
+![Traffic Light Waveform](./waveform.png)
+
+> ⚠️ If the image does not display, make sure `waveform.png` is uploaded in the same folder as this README file.  
+> You can also use `images/waveform.png` if placed inside a subfolder and update the link accordingly.
+
+---
+
+## 🧠 Implementation Steps
+
+1. **Open EDA Playground** → select Verilog/SystemVerilog + EPWave.
+2. Copy and paste:
+   - `traffic_controller.v` (design)
+   - `tb_traffic.v` (testbench)
+3. Click **Run** → Open **EPWave** to view the waveform.
+4. Capture waveform screenshot (`waveform.png`).
+5. Upload all files to your GitHub repository:
+   ```
+   📁 FPGA-Traffic-Light-Controller
+   ├── traffic_controller.v
+   ├── tb_traffic.v
+   ├── waveform.png
+   └── README.md
+   ```
+
+---
+
+## ⚙️ Key Features
+- Fully **digital FSM-based traffic controller**
+- **Emergency vehicle priority** handling (via `emg_ns` and `emg_ew`)
+- **Synchronous design** using clock and reset
+- **Configurable timing** parameters (for simulation and FPGA)
+- Easily portable to FPGA tools like **Vivado** or **Quartus**
+
+---
+
+## 🧾 Results Summary
+✅ Smooth state transitions  
+✅ Correct light sequencing for both directions  
+✅ Proper emergency override response  
+✅ Verified waveform output (EPWave/Vivado)
+
+---
+
+## 👨‍💻 Author
+**Nathish Rathod**  
+📧 Email: [nathishrathod3774@gmail.com](mailto:nathishrathod3774@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/nathish-rathod](http://linkedin.com/in/nathish-rathod)
+
+---
+
+## 🏁 Conclusion
+This project demonstrates a simple yet effective FPGA-based **Traffic Light Controller with Emergency Priority System**.  
+It showcases your understanding of **FSM design**, **Verilog coding**, and **simulation analysis** — making it ideal for both **academic submission** and **portfolio presentation**.
+
+---
