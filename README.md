@@ -27,25 +27,6 @@ The waveform below demonstrates:
 
 ---
 
-## 🧠 Implementation Steps
-
-1. **Open EDA Playground** → select Verilog/SystemVerilog + EPWave.
-2. Copy and paste:
-   - `traffic_controller.v` (design)
-   - `tb_traffic.v` (testbench)
-3. Click **Run** → Open **EPWave** to view the waveform.
-4. Capture waveform screenshot (`waveform.png`).
-5. Upload all files to your GitHub repository:
-   ```
-   📁 FPGA-Traffic-Light-Controller
-   ├── traffic_controller.v
-   ├── tb_traffic.v
-   ├── waveform.png
-   └── README.md
-   ```
-
----
-
 ## ⚙️ Key Features
 - Fully **digital FSM-based traffic controller**
 - **Emergency vehicle priority** handling (via `emg_ns` and `emg_ew`)
